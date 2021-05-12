@@ -10,11 +10,11 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
-var file_name = "/index/Surah/surah_";
+var file_name = "../index/Surah/surah_";
 var counter = 1;
 var surah;
 //usage:
-readTextFile("/index/Surah/surah_1.json",function(text){    
+readTextFile("../index/Surah/surah_1.json",function(text){    
     surah = JSON.parse(text);
     // console.log(surah);
     // console.log(surah.data[0].name);
@@ -32,7 +32,6 @@ readTextFile("/index/Surah/surah_1.json",function(text){
             str+= "(" + i++ + ") " + element+ "\n";
     }
     document.getElementById('ayats').innerText = str;    
-
 }
 );
 
@@ -63,7 +62,7 @@ function next_surah()
         document.getElementById('ayats').innerText = str;    
     
     }); 
-    file_name = "/index/Surah/surah_";
+    file_name = "../index/Surah/surah_";
 }
 function prev_surah() 
 {
@@ -90,7 +89,7 @@ function prev_surah()
         document.getElementById('ayats').innerText = str;    
     
     }); 
-    file_name = "/index/Surah/surah_";
+    file_name = "../index/Surah/surah_";
     }    
 }
 let size_font = 200;
