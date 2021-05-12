@@ -1,3 +1,4 @@
+// method to read the file from the server 
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -16,10 +17,6 @@ var surah;
 //usage:
 readTextFile("../index/Surah/surah_1.json",function(text){    
     surah = JSON.parse(text);
-    // console.log(surah);
-    // console.log(surah.data[0].name);
-    // console.log(surah.data[0].count);
-    // console.log(surah.data[0].verse);
 
     document.getElementById('surah_id').innerText = surah.data[0].name;
     document.getElementById('ayat_id').innerText = surah.data[0].count;
@@ -92,7 +89,10 @@ function prev_surah()
     file_name = "../index/Surah/surah_";
     }    
 }
+
 let size_font = 200;
+// method to change the size 
+
 function increase_font()
 {
     if(size_font==300)
@@ -101,6 +101,7 @@ function increase_font()
     size_font+=25;
 }
 
+// method to change the size 
 function decrease_font()
 {
     if(size_font==100)
