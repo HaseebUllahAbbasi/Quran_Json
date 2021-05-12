@@ -22,7 +22,7 @@ readTextFile("../index/Surah/surah_1.json",function(text){
     document.getElementById('ayat_id').innerText = surah.data[0].count;
     var ayats = surah.data[0].verse;
     var str = "";
-    let i=1; 
+    let i=0; 
     for (const key in ayats) {
             const element = ayats[key];
            // console.log(element);

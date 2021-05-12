@@ -6,8 +6,21 @@ body
 p
 {
     color: blanchedalmond;
+  
 }
 hr
 {
     color: wheat;
+}
+#ayats
+{
+    margin-right:  0.5rem;
+
+    
+}
+#ayat_con
+{
+    box-shadow: 4px 4px 8px 4px rgba(212, 206, 206, 0.918), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    border-radius: 1rem;
 }
