@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="container">
+    <p class="display-1 text-center" >Quran (JSON)</p>
+    <div class="row">
+      <div class="col-md-6 col-sm-4">
+        <p class="display-4">Surah :  <span id="surah_id"></span> </p>
+        <p class="display-4">Ayats :  <span id="ayat_id"></span> </p>
+      </div>
+    <div class="col-md-6 col-sm-4">
+        <button class="btn btn-success my-4" onclick="next_surah()" > Next Surah</button>
+        <button class="btn btn-success my-4" onclick="prev_surah()" > Previos Surah</button>
+        <button class="btn btn-success my-4" onclick="increase_font()" > Increase Font</button>
+        <button class="btn btn-success my-4" onclick="decrease_font()" > Decrease Font</button>
+      </div>  
+    </div>
+    <hr>
+    <hr>
+
+    <p class="display-4 " id="ayats" style="font-family: 'Lateef', cursive; text-align: right; "></p>
+  </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script src="js/index_jq.js"></script>
+    <!-- <script src="Surah/surah_001.json"></script>   -->
+
+</body>
+</html>
